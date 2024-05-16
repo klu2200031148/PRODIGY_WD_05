@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --primary-color: #ff6f61;
+  --secondary-color: #1a1a1d;
+  --text-color: #333;
+  --background-color: #f4f4f4;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+.container {
+  background-color: #a8ccd8;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 400px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+  padding: 12px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  width: 70%;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-container button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.search-container button:hover {
+  background-color: #ff5131;
+}
+
+#result {
+  text-align: center;
+}
+
+#result h2 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+.weather,
+.desc {
+  color: var(--text-color);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.temp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.temp-container div {
+  margin: 0 10px;
+}
+
+.temp-container .title {
+  font-weight: bold;
+}
+
+.temp-container .temp {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.msg {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--text-color);
+  font-weight: bold;
+}
